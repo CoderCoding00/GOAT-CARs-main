@@ -1,0 +1,31 @@
+[
+    {
+      "username": "Youung",
+      "firstName": "Young",
+      "lastName": "last",
+      "email": "young@gmail.com",
+      "password": "password12345"
+    },
+    {
+      "username": "Druum",
+      "firstName": "Drum",
+      "lastName" : "Hollidday",
+      "email": "Drum@gmail.com",
+      "password": "drumpassword12345"
+    },
+    {
+      "username": "richardyou94",
+      "firstName": "Richard",
+      "lastName" : "You",
+      "email": "richardyou94@gmail.com",
+      "password": "asdasdasd"
+    },
+    {
+      "username": "Naaathan",
+      "firstName": "Nathan",
+      "lastName": "Underwood",
+      "email": "Nathan@gmail.com",
+      "password": "nathanpassword54321"
+    }
+  ]
+  

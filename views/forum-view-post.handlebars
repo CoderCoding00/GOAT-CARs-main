@@ -1,0 +1,54 @@
+<div class="forum-background min-height">
+            {{> forum-nav}}
+            <main class="main-page">
+                <div class="forum-box container bg-white">
+                    <div class="text-left">
+                        <div class="post-user">
+                            <h5 class="m-t-10">{{forum.user.username}}</h5>
+                            <h6 class="m-t-15">{{format_date forum.date_created}}</h6>
+                        </div>
+                    </div>
+                    <div class="hide" id="forum-id"></div>
+                    <div class="post-title">
+                        <h1>{{forum.title}}</h1>
+                    </div>
+                    <div class="post-category">
+                        <h5>in {{forum.category}}</h5>
+                    </div>
+                    <div class="post-description">
+                        <h3> {{forum.description}} </h3>
+                    </div>
+                    <div class="text-left">
+                        <div class="row post-like">
+                            <div class="col">
+                                Like
+                            </div>
+                            <div class="col">
+                                0
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <h6 class="post-comment-nav">Comments </h6>
+                    <div class="comment-box">
+                        <form class="comment-form">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label"></label>
+                                <textarea class="comment-description" id="comment-post" rows="3" placeholder="Write a comment..."></textarea>
+                            </div>
+                            <div class="text-right">
+                                <button type="submit" class="btn-publish btn btn-primary">Publish</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="comment-list row">
+                        <div class="col-2 comment-username">
+                                Username
+                        </div>
+                        <div class="comment-box comment-textoutput col-10">
+                            <h5>Comment description hahaha.. love it </h5>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>

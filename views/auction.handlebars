@@ -1,0 +1,41 @@
+<div class="forum-background min-height">
+    
+    <div class="forum-category-name text-center auction">
+        <h1>Auction</h1>
+    </div>
+    <main class="main-page">
+        <div class="forum-box container">
+            <div class="text-right m-b-30">
+                {{#if logged_in}}
+                <a href="/auction/new-auction">
+                    <button type="button" class="btn btn-primary auction-button-width">POST YOUR AUCTION</button>
+                </a>
+                {{else}}
+                <a href="/login">
+                    <button type="button" class="btn btn-primary auction-button-width">POST YOUR AUCTION</button>
+                </a>
+                {{/if}}
+            </div>
+            <div class="forum-category-list row row-cols-1 row-cols-md-2 g-4">
+                {{#each auctions as |auction|}}
+                <div class="col">
+                    <div class="card" href="#">
+                        <img src="{{auction.car.image}}" class="card-img-top" alt="cars shown">
+                        <div class="card-body">
+                            <h3 class="card-title">{{auction.title}}</h3>
+                            <h4 class="card-text">{{auction.user.username}}</h4>
+                            <p class="card-text">{{auction.description}}</p>
+                            <p class="card-text">Current bid: ${{format_amount auction.current_bid}} </p>
+                            <p class="card-text">Time Left: <span id="timeleft"></span></p>
+                            <a href="/auction/bid/{{auction.id}}" class="btn btn-primary stretched-link m-t-15 m-b-10 forum-btn">GO BID!</a>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+                
+                
+            </div>
+            
+        </div>
+    </main>
+</div>

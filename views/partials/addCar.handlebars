@@ -1,0 +1,78 @@
+<div class="modal" id="addCarModal" tabindex="-1" aria-labelledby="addCarLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header text-left">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="card-body p-md-5 modal-body">
+                <div class="justify-content-center">
+                    <div class="">
+                        
+                        <p class="text-left h1 fw-bold mb-5 mx-1 mx-md-4 mt-4" style="width:100%;">Add Your CAR!</p>
+
+                        <form  enctype="multipart/form-data" class="add-car-form mx-1 mx-md-4">
+
+                            <div class="d-flex flex-row align-items-center mb-4">
+                                <div class="form-outline flex-fill mb-0">
+                                    <label class="form-label" for="form3Example1c"></label>
+                                    <input type="number" id="car-year" class="form-control" placeholder="Car Year" />
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row align-items-center mb-4">
+                                <div class="form-outline flex-fill mb-0">
+                                    <label class="form-label" for="form3Example1c"></label>
+                                    <input type="text" id="car-make" class="form-control" placeholder="Car Make" />
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row align-items-center mb-4">
+                                <div class="form-outline flex-fill mb-0">
+                                    <label class="form-label" for="form3Example1c"></label>
+                                    <input type="text" id="car-model" class="form-control" placeholder="Car Model" />
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row align-items-center mb-4">
+                                <div class="form-outline flex-fill mb-0">
+                                    <label class="form-label" for="form3Example1c"></label>
+                                    <input type="number" id="car-value" class="form-control" placeholder="Car Value" />
+                                </div>
+                            </div>
+
+                            {{!-- This is trying to use Cloudinary --}}
+                            <div class="d-flex flex-row align-items-center mb-4">
+                                <div class="form-outline flex-fill mb-0">
+                                    <label class="form-label" for="form3Example1c"></label>
+                                    <input type="file" accept="png" name="image" id="car-image" class="form-control" />
+                                </div>
+                            </div>
+                            {{!-- This is for just paste the link --}}
+                            {{!-- <div class="d-flex flex-row align-items-center mb-4">
+                                <div class="form-outline flex-fill mb-0">
+                                    <label class="form-label" for="form3Example1c"></label>
+                                    <input type="text" id="car-image" class="form-control" placeholder="paste the link of the image" />
+                                </div>
+                            </div> --}}
+
+                            <div class="d-flex flex-row align-items-center mb-4">
+                                <div class="form-outline flex-fill mb-0">
+                                    <label class="form-label" for="form3Example1c"></label>
+                                    <input type="text" id="car-description" class="form-control" placeholder="Describe about your amazing cars!" />
+                                </div>
+                            </div>
+                            
+<h6 class="hide m-b-20" id="alert-edit" style="color: red">You have not entered all the information!</h6>
+
+                            <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                                <button  type="submit" class="btn btn-primary m-t-20 btn-lg">Add CAR</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

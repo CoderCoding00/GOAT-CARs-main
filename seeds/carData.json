@@ -1,0 +1,58 @@
+
+[
+    {
+    "id": 1, 
+    "year": 1965, 
+    "make": "Mercedes", 
+    "model": "220SE Cabriolet", 
+    "value": 80000, 
+    "image": "https://bringatrailer.com/wp-content/uploads/2021/06/1965_mercedes-benz_220se_cabriolet_16274080447bdf0d6c519f6b34DSC02694.jpg?fit=940%2C626",
+    "description": "An old school sexy Merc convertible with maroon interier for you to show off to your future spouse"
+},
+{
+    "id": 2, 
+    "year": 1965, 
+    "make": "Ford", 
+    "model": "Mustang 289 Convertible", 
+    "value": 30000, 
+    "image": "https://bringatrailer.com/wp-content/uploads/2016/10/Screen-Shot-2016-10-14-at-1.20.58-PM.png?fit=940%2C584",
+    "description": "RED HOT sexy Mustang convertible, for sure will turn heads"
+},
+{
+    "id": 3, 
+    "year": 1985, 
+    "make": "Toyota", 
+    "model": "AE86 Trueno", 
+    "value": 10000, 
+    "image": "https://images.summitmedia-digital.com/topgear/images/2020/07/10/ae86-7-1594356177.jpg",
+    "description": "can't go wrong with an OLD reliable TOYOTA Panda Trueno ready to drift mountain roads. Inspired by DK Takumi from Initial D"
+},
+{
+    "id": 4, 
+    "year": 1961, 
+    "make": "Jaguar", 
+    "model": "XKE ROADSTER", 
+    "value": 215000, 
+    "image": "https://barrettjacksoncdn.azureedge.net/staging/carlist/items/Fullsize/Cars/212793/212793_Front_3-4_Web.jpg",
+    "description": "One of a kind Jaguar convertible with red hot interior for collector / enthusiast, will definitely get you the attention you need"
+},
+{
+    "id": 5, 
+    "year": 1966, 
+    "make": "Lamborghini", 
+    "model": "Miura", 
+    "value": 400000, 
+    "image": "https://drives.today/upload/000/u1/d/d/dd1d5a9f.jpg",
+    "description": "A classic rare Sexy Orange bull from italy. You definitely won't see this in any amatuer collector garage"
+},
+{
+    "id": 6, 
+    "year": 1967, 
+    "make": "Shelby Cobra", 
+    "model": "427 Super Snake", 
+    "value": 5000000, 
+    "image": "https://cache.desktopnexus.com/wallpapers/2578/2578035-1920x1080-1967-Shelby-Cobra-427-Super-Snake-Roadster.jpg?st=kNhz7X4Z9IaTHS-TLJVi5A&e=1666073952",
+    "description": "A very Rare one of 23 built in 1965. Last sold for 5 million dollar. If you have ton of cash sitting around, get this baby and rip the soul of anyone looking at it."
+}
+]
+

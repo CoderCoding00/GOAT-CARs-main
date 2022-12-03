@@ -1,0 +1,56 @@
+<div class="modal" id="changePasswordModal" tabindex="-1" aria-labelledby="changePasswordLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header text-left">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="card-body p-md-5 modal-body">
+                <div class="justify-content-center">
+                    <div class="">
+                        
+                        <p class="text-left h1 fw-bold mb-5 mx-1 mx-md-4 mt-4" style="width:100%;">Change Password</p>
+
+                        <form class="password-form mx-1 mx-md-4">
+
+                            <div class="d-flex flex-row align-items-center mb-4">
+                                <div class="form-outline flex-fill mb-0">
+                                    <label class="form-label" for="for3Example4c"></label>
+                                    <input type="password" id="current-password" class="form-control" placeholder="Current Password"/>
+                                    <div>
+                                        <h6 class="hide alert-sentence m-t-5" id="password-alert-wrong" style="color: red">You have inputed wrong password</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row align-items-center mb-4">
+                                <div class="form-outline flex-fill mb-0">
+                                    <label class="form-label" for="for3Example4c"></label>
+                                    <input type="password" id="new-password" class="form-control" placeholder="New Password"/>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row align-items-center mb-4">
+                                <div class="form-outline flex-fill mb-0">
+                                    <label class="form-label" for="form3Example4cd"></label>
+                                    <input type="password" id="new-password-confirm" class="form-control" placeholder="Repeat New Password" />
+                                    <div>
+                                        <h6 class="hide alert-sentence m-t-5" id="password-alert-repeatpw" style="color: red">You have not correctly repeat the password!</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center mx-4 p-t-20 mb-3 mb-lg-4">
+                                <button type="submit" class="btn btn-primary btn-lg">Change Password</button>
+                                <div>
+                                    <h6 class="hide alert-sentence m-t-5" id="password-alert-missing" style="color: red">You have not input all information!</h6>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

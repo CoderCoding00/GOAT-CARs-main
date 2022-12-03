@@ -1,0 +1,35 @@
+{{!-- <div class="custom-container">
+    <img src="./images/Home-main-wide2.png" class="main-image" alt="main homepage background image">
+    <img src="./images/G.O.A.T.png" alt="logo" class="main-logo">
+    <div class="text-white quote-box">
+        <h2 class="custom-font-size">"Without CLASSICS</h2>
+        <h3 class="custom-font-size">LIFE would have no peace"</h3>
+    </div>
+</div> --}}
+
+<div class="gallery-container bg-light"  >
+  <div class="forum-category-name text-center p-t-50 auction" style="min-height:250px;" >
+      <h1>Classic Gallery</h1>
+  </div>
+  <div id="gallery-card-container" class="bg-light" >
+  {{#each cars as |car| }}
+
+    <div class="card card-cars container-fluid shadow-lg-custom p-3 mb-5 bg-white rounded" style="width: 80%;">
+      <img src="{{car.image}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{car.make}}</h5>
+        <p class="car-card-text">Model:
+          {{car.year}} {{car.model}}</p>
+          <p class="car-card-text">About:
+          {{car.description}}</p>
+          <p class="car-card-text">Price:
+          ${{car.value}}</p>
+        <a href="#" class="btn btn-primary">Interested?</a>
+      </div>
+    </div>
+    {{/each}}
+
+  </div>
+</div>
+
+</html>

@@ -1,0 +1,64 @@
+<div class="forum-background min-height">
+    
+        <div class="forum-category-name text-center auction">
+            <h1>Merchandise</h1>
+        </div>
+    
+        <div class="merchandise-container text-center">
+            <div id="merch-card-container" class="container">
+            <div class="forum-category-list row row-cols-1 row-cols-md-2 g-4">
+              {{#each merchandises as |merchandise|}}
+            
+              <div class="card card-merch" style="width: 18rem;">
+                <img src="{{merchandise.image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{merchandise.title}}</h5>
+                  <p class="card-text">Description:
+                    {{merchandise.description}}</p>
+                    <p class="card-text">Price:
+                    ${{merchandise.price}}</p>
+                    
+                    <a href="/merchandise/merchandise-buy" class="btn btn-primary">Buy Now! ??</a>
+                    
+                </div>
+              </div>
+            
+    {{/each}}
+              </div>
+                    
+                
+            </div>
+            
+        </div>
+    
+</div>
+{{!-- 
+
+<div class="merchandise-container">
+  <div class="card-header col-md-12 text-center">
+    <h2>
+      Merchandise
+    </h2>
+  </div>
+  <div id="merch-card-container">
+    {{#each merchandises as |merchandise|}}
+    <div class="card card-merch" style="width: 18rem;">
+      <img src="{{merchandise.image}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{merchandise.title}}</h5>
+        <p class="card-text">Description:
+          {{merchandise.description}}</p>
+          <p class="card-text">Price:
+          ${{merchandise.price}}</p>
+        <a href="/merchandise/merchandise-buy" class="btn btn-primary">Buy Now!</a>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
+
+</html>
+
+
+
+   --}}

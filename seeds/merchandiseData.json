@@ -1,0 +1,40 @@
+[
+    {
+    "id": 1, 
+    "title": "1960's Mercedes Emblem", 
+    "description": "Emblem taken off a famous Mercedes from James Bond movie", 
+    "price": 1000000000, 
+    "image": "https://thumbs.dreamstime.com/b/emblem-car-retro-old-mercedes-benz-close-up-kharkiv-ukraine-may-117795926.jpg"
+},
+
+{ "id": 2, 
+"title": "1960s Car T-Shirt", 
+"description": "Show em your stuff witht this sweet T that let's the people know what's up", 
+"price": 25, 
+"image": "https://cdn.shopify.com/s/files/1/1306/0683/products/Im_Not_Old_Im_A_Classic_Funny_Classic_Car_T-Shirt_shirt_tshirt_666x695.jpg?v=1631990439"
+}, 
+
+{ "id": 3, 
+"title": "1960s Car Hat", 
+"description": "Block out the sun and the 70s Car Club hate with this sweet snapback", 
+"price": 30, 
+"image": "https://i.etsystatic.com/32127616/r/il/bc3cb3/3897216259/il_794xN.3897216259_m6wu.jpg"
+}, 
+
+{
+    "id": 4, 
+    "title": "1960s Bug Car Model ", 
+    "description": "Slug bug, blue! You get to punch someone in the arm", 
+    "price": 45, 
+    "image": "https://web4.hobbylinc.com/gr/rmx/rmx854192_285.jpg"  
+}, 
+{
+    "id": 5, 
+    "title": "1960s Ferrari Poster", 
+    "description": "See paradise every day with this poster hanging from your wall!", 
+    "price": 30, 
+    "image": "https://i.pinimg.com/736x/b5/21/4f/b5214fffb127c5eafd8b30fb7bb11553.jpg"  
+}
+
+
+]

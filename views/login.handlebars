@@ -1,0 +1,69 @@
+<div class="login-background">
+    {{> signup}}
+    <div class="login-card">
+        <form class="login100-form">
+            <span class="login100-form-title p-b-49">
+                Login
+            </span>
+					<div class="wrap-input100 validate-input m-b-23" data-validate = "Username is required">
+						<span class="label-input100">Email</span>
+						<input class="input100" id="email-login" type="text" name="username" placeholder="Type your email">
+						<span class="focus-input100" data-symbol="&#xf206;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Password is required">
+						<span class="label-input100">Password</span>
+						<input class="input100" id="password-login" type="password" name="pass" placeholder="Type your password">
+						<span class="focus-input100" data-symbol="&#xf190;"></span>
+					</div>
+					
+					<div class="p-t-15 p-l-10 p-b-31">
+						<a href="#">
+							Forgot password?
+						</a>
+					</div>
+					
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button type="submit" class="login100-form-btn">
+								Login
+							</button>
+						</div>
+					</div>
+                    <div class="txt1 text-center p-b-20 p-t-20">
+                        <span>
+                            Or Sign Up Using
+                        </span>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            
+
+                            <div class="flex-c-m p-l-30">
+                                <a onclick="NewFacebook()" href="#" class="login100-social-item bg1">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+
+                                <a href="#" onclick="NewTwitter()" class="login100-social-item bg2">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+
+                                <a href="#"  onclick="NewGoogle()" class="login100-social-item bg3">
+                                    <i class="fa fa-google"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="flex-col-c">
+                                <a href="#" onclick="emptyForum()" class="txt2 p-t-15 p-r-30" data-bs-toggle="modal" data-bs-target="#signupModal">
+                                    Sign Up
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+				</form>
+            </div>
+        </form>
+    </div>
+</div>

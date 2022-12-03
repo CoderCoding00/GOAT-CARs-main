@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> headsection}}
+    <title>G.O.A.T CAR</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/GOAT CAR logo.png" alt="logo image" width="75" height="75"
+                    class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="justify-content-between  d-flex flex-column flex-lg-row">
+                    <div class="navbar-nav nav-selection">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        <a class="nav-link" href="/auction">AUCTION</a>
+                        <a class="nav-link" href="/forum">FORUM</a>
+                        <a class="nav-link" href="/merchandise">MERCHANDISE</a>
+                        <a class="nav-link" href="/gallery">GALLERY</a>
+                        {{#if logged_in}}
+                        <a class="nav-link" href="/profile">PROFILE</a>
+                        <a class="nav-link" id="logout" href="#">LOGOUT</a>
+
+                        {{else}}
+                        <a class="nav-link" href="/login">LOGIN</a>
+                        {{/if}}
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="contianer space-nav">
+    </div>
+    <main>
+        {{{ body }}}
+    </main>
+    <footer class="bg-light text-center">
+        2022 TEAM FIVE GOAT CARS
+    </footer>
+    {{> afterfooter}}
+</body>
+
+</html>

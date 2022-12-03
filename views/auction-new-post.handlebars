@@ -1,0 +1,45 @@
+<div class="forum-background min-height">
+    <div class="forum-category-name text-center auction">
+        <h1>Post Your Auction!</h1>
+    </div>
+            <main class="main-page">
+                <div class="forum-box container bg-white">
+                    <form class="newAuctionForum">
+                        <div class="mb-3">
+                            <label for="forumTitle" class="form-label">Title</label>
+                            <input type="text" class="form-control" id="auction-post-title">
+                        </div>
+                        <div class="mb-3">
+                            <label for="auction-car-select" class="form-label">SELECT YOUR CAR</label>
+                            <select class="form-select" aria-label="select-user-car" id="auction-car-id">
+                                <option>Add your car at Profile page to do auction!</option>
+                                {{#each cars as |car|}}
+                                <option value="{{car.id}}" >{{plusOne @index}}: {{car.year}} {{car.make}} {{car.model}} </option>
+                                {{/each}}
+                            </select>       
+                        </div>
+                        <div class="mb-3">
+                            <label for="auction-date-pick" class="form-label">SELECT DATE you want to end auction</label>
+                            <input type="text" class="form-control" id="datepicker">
+                        </div>
+                        <div class="mb-3">
+                            <label for="auction-timeEnd" class="form-label">SELECT HOUR you want to end auction</label>
+                            <input type="time" id="auction-endHour" class="form-control">
+                        </div>
+                        <div class="mb-3 currency-wrap">
+                            <label for="auction-startingBid" class="form-label">ENTER Your STARTING BID</label>
+                            <span class="currency-code">$</span>
+                            <input type="number" id="starting-bid" class="form-control text-currency">
+                        </div>
+                        <div class="mb-3">
+                            <label for="postDescription" class="form-label">Post Description</label>
+                            <textarea class="form-control" id="auction-post-descr" rows="3"></textarea>
+                        </div>
+                        
+                        
+                        <button type="submit" class="btn m-t-10 btn-primary">POST AUCTION</button>
+                    </form>
+                </div>
+            </main>
+        </div>
+        

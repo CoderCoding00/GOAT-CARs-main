@@ -1,0 +1,103 @@
+<div class="forum-background min-height">
+            {{> forum-nav}}
+            <div class="forum-category-name text-center">
+                <h1>Forum Categories</h1>
+            </div>
+            <main class="main-page">
+                <div class="forum-box container">
+                    <div class="text-right m-b-15">
+                        {{#if logged_in}}
+                        <a href="/forum/new-post">
+                            <button type="button" class="btn btn-primary forum-button-width">Create New Post</button>
+                        </a>
+                        {{else}}
+                        <a href="/login">
+                            <button type="button" class="btn btn-primary forum-button-width">Create New Post</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <div class="forum-category-list row row-cols-1 row-cols-md-2 g-4">
+
+                        <div class="col">
+                            <div class="card" href="#">
+                                <img src="./images/forum-categories/showcars.png" class="card-img-top" alt="cars shown">
+                                <div class="card-body">
+                                    <h3 class="card-title">Car Review</h3>
+                                    <p class="card-text">This is the category for people who wants to share about their cars' information! ASK each others about the cars! </p>
+                                    <a href="/forum/car-review" class="btn btn-primary stretched-link m-t-15 m-b-10 forum-btn">Explore!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" href="#">
+                                <img src="./images/forum-categories/askprice.png" class="card-img-top" alt="image of letter 'price' and car">
+                                <div class="card-body">
+                                    <h3 class="card-title">Ask Price</h3>
+                                    <p class="card-text">This is the category for people who wants to know the price of their cars that they are going to sell it!</p>
+                                    <a href="/forum/ask-price" class="btn btn-primary stretched-link m-t-15 m-b-10 forum-btn">Explore!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" href="#">
+                                <img src="./images/forum-categories/maintenance.png" class="card-img-top" alt="cars shown">
+                                <div class="card-body">
+                                    <h3 class="card-title">Maintenance Talk</h3>
+                                    <p class="card-text">This is the category for people who wants to share how to take care of car maintenance!</p>
+                                    <a href="/forum/maintenance-talk" class="btn btn-primary stretched-link m-t-15 m-b-10 forum-btn">Explore!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" href="#">
+                                <img src="./images/forum-categories/freetalk.png" class="card-img-top" alt="cars shown">
+                                <div class="card-body">
+                                    <h3 class="card-title">Free Talk</h3>
+                                    <p class="card-text">This is the category for people who wants to have free conversation each other. The topics can be any! Please have appropriate conversation in this category! </p>
+                                    <a href="/forum/free-talk" class="btn btn-primary stretched-link m-t-15 m-b-10 forum-btn">Explore!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-left m-t-20">
+                            New Posts
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            {{#each forums as |forum| }}
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            
+                                            <div class="col">
+                                                <h6>{{forum.username}}</h6>
+                                                <h6>{{format_date forum.date_created}}</h6>
+                                            </div>
+                                        </div>
+                                        <h5 class="m-t-10">{{forum.title}}</h5>
+                                        <h6 class="m-t-7">{{forum.category}}</h6>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col">
+                                                <i class="bi bi-chat-dots"></i> 10
+                                            </div>
+                                            <div class="col">
+                                                <i class="bi bi-heart-fill"></i> 10
+                                            </div>
+                                            <div class="col">
+                                                <i class="bi bi-eye"></i> 10
+                                            </div>
+                                            <a href="/forum/view-post/{{forum.id}}" class="m-r-10 m-b-10 btn-primary medium-width btn">View</a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>

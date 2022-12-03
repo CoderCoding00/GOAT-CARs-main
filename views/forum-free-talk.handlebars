@@ -1,0 +1,55 @@
+<div class="forum-background min-height">
+            {{> forum-nav}}
+            <div class="forum-category-name text-center free-talk">
+                <h1>Free Talk</h1>
+            </div>
+            <main class="main-page">
+                <div class="forum-box container">
+                    <table class="table table-light">
+                        <colgroup span="2"></colgroup>
+                        <colgroup span="4"></colgroup>
+                        <thead>
+                            <tr>
+                                <th colspan="2" scope="colgroup" class="forum-sort">Sort by: Recent Activity</th>
+                                <th colspan="4" scope="colgroup">
+                                    {{> createNewPostBtn}}
+                                </th>
+                            </tr>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col"><i class="bi bi-chat-dots"></i></th>
+                                <th scope="col"><i class="bi bi-heart-fill"></i></th>
+                                <th scope="col"><i class="bi bi-eye"></i></th>
+                                <th colspan="2" scope="colgroup">Date Posted</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each forums as |forum| }}
+                            <tr>
+                                <td>
+                                    <div>
+                                        {{forum.title}}
+                                        {{!-- <a href="/forum/post/{{forum.id}}" class="stretched-link btn"></a> --}}
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                        {{forum.user.username}}
+                                        </div>
+                                        <div class="col">
+                                        {{forum.category}} 
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="small-width">0</td>
+                                <td class="small-width">0</td>
+                                <td class="small-width">0</td>
+                                <td class="medium-width">{{format_date forum.date_created}}</td>
+                                <td class="small-width"><a href="/forum/view-post/{{forum.id}}" class=" btn-primary btn">View</a> </td> 
+                            </tr>
+                            {{/each}}
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>

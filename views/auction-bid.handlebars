@@ -1,0 +1,66 @@
+<div class="forum-background min-height">
+    {{> bid}}
+            <main class="main-page p-t-40">
+                <div class="forum-box container bg-white">
+                    <div class="text-left solid-box p-b-20">
+                        <div class="post-user ">
+                            <h5 class="m-t-20 m-b-20">Username: <span class="m-l-40"></span>{{auction.user.username}}</h5>
+                            <div class="hide" id="bid-username">{{username}}</div>
+                            <h6>Date Posted: <span class="m-l-50"></span> {{format_date auction.date_created}}</h6>
+                        </div>
+                    </div>
+                    <div id="auction-id" class="hide">{{auction.id}}</div>
+                    <div id="current-bid-view" class="hide">{{auction.current_bid}}</div>
+                    <div class="m-t-30 auction-post-title">
+                        <h1>{{auction.title}}</h4>
+                    </div>
+                    <div class="m-t-30 auction-post-description">
+                        <h4>{{auction.description}}</h3>
+                    </div>
+                    <div class="m-t-30">
+                        <img class="card-img-top" src="{{auction.car.image}}">
+                    </div>
+                    <div class="container text-center">
+                        <div class="m-t-15 row">
+                            <div class="col m-t-30 align-items-center text-right">
+                                <h2>{{auction.car.year}} {{auction.car.make}} {{auction.car.model}}</h2>
+                            </div>
+                            <div class="col text-left m-l-30">
+                                <h4 class="m-t-15">Value: ${{format_amount auction.car.value}}</h3>
+                                <h4 class="m-t-15">Starting Bid: ${{format_amount auction.starting_bid}}</h4>
+                            </div>
+                        </div>
+                        <div class="m-t-15">
+                            <button class="btn btn-primary btn-bid" data-bs-toggle="modal" data-bs-target="#bidModal">BID!</button>
+                        </div>
+                    </div>
+                    <div class="m-t-15 text-center">
+                        <h2>Current BID: <span class="m-l-30">${{format_amount auction.current_bid}}</span> </h2>
+                        <h1 id="bid-text" class="m-t-20 text-primary"></h1>
+                    </div>
+                    
+                    <hr>
+                    <h6 class="post-comment-nav">Comments</h6>
+                    <div class="comment-box">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label"></label>
+                                <textarea class="comment-description" id="exampleFormControlTextarea1" rows="3" placeholder="Write a comment..."></textarea>
+                            </div>
+                            <div class="text-right">
+                                <button class="btn-publish btn btn-primary disabled">Publish</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="comment-list row">
+                        <div class="col-2 comment-username">
+                                Username
+                        </div>
+                        <div class="comment-box comment-textoutput col-10">
+                            <h5>Comment description hahaha.. love it </h5>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="js/bid.js"></script>

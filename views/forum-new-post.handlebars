@@ -1,0 +1,44 @@
+<div class="forum-background min-height">
+            {{> forum-nav}}
+            <main class="main-page">
+                <div class="forum-box container bg-white">
+                    <form class="newPostForum">
+                        <div class="mb-3">
+                            <label for="forumTitle" class="form-label">Title</label>
+                            <input type="text" class="form-control" id="forum-post-title">
+                        </div>
+                        <div class="mb-3">
+                            <label for="postDescription" class="form-label">Post Description</label>
+                            <textarea class="form-control" id="forum-post-descr" rows="3"></textarea>
+                        </div>
+                        <h6 class="m-b-10"> Select the categories!</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" name="categories" id="check-carReview" type="checkbox" value="">
+                            <label class="form-check-label">
+                                Car Review
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="categories" id="check-askPrice" type="checkbox" value="">
+                            <label class="form-check-label">
+                                Ask Price
+                            </label>
+                        </div>              
+                        <div class="form-check">
+                            <input class="form-check-input" name="categories" id="check-maintenance" type="checkbox" value="">
+                            <label class="form-check-label">
+                                Maintenance
+                            </label>
+                        </div>              
+                        <div class="form-check">
+                            <input class="form-check-input" name="categories" id="check-freeTalk" type="checkbox" value="">
+                            <label class="form-check-label">
+                                Free Talk
+                            </label>
+                        </div>              
+                        
+                        <button type="submit" class="btn m-t-10 btn-primary">Submit</button>
+                    </form>
+                </div>
+            </main>
+        </div>

@@ -1,0 +1,45 @@
+<div class="white-background min-height">
+    {{> addCar}}
+    {{> changePW}}
+    {{> deleteUser}}
+    <div class="text-center p-t-50 p-b-40">
+        <h1>Welcome, {{firstName}}!</h1>
+    </div>
+    <hr>
+    <div class="min-height">
+        <div class="text-center p-t-40 p-b-40">
+            <h2><b>Your account</b></h2>
+            <div class="hide" id="profile-user-id" >{{id}}</div>
+        </div>
+        <div class="row p-t-30 p-l-40">
+            <div class="col text-center">
+                <div class="profile-image p-b-30 img-fluid">
+                    <img src="./images/profiles/profile-default.png">
+                </div>
+                <div class="btn-image m-t-20 row">
+                    <button class="col button-13">Change Photo</button>
+                    <button class="col button-13">Remove Photo</button>
+                </div>
+            </div>
+            <div class="col profile-information">
+                <div class="">
+                    <div class="text-left">
+                        <h3>Username: <span class="m-l-50">{{username}}</span></h3>
+                        <h3>First Name: <span class="m-l-50">{{firstName}}</span></h3>
+                        <h3>Last Name: <span class="m-l-50">{{lastName}}</span></h3>
+                        <h3>Email: <span class="m-l-50">{{email}}</span></h3>
+                    </div>
+                </div>
+                <div class="btn-image m-t-20 row text-center">
+                    {{!-- <button class="button-13 profile-btn-edit" data-bs-toggle="modal" data-bs-target="#editProfileModal">Edit</button> --}}
+                    <button class="button-13 profile-btn-edit" type="button" data-bs-toggle="modal" data-bs-target="#changePasswordModal" disabled >Change Password</button>
+                    <button class="button-13 profile-btn-edit"  data-bs-toggle="modal" data-bs-target="#addCarModal">Add your Car!</button>
+                    <button class="button-13 profile-btn-edit"  data-bs-toggle="modal" data-bs-target="#deleteUserModal">Delete Account</button>
+                </div>
+            </div>
+        </div>
+    </div>  
+    
+    
+</div>
+
