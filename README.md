@@ -23,17 +23,9 @@ Technology Used
 7. Socket.io
 8. Express Validator 
 
-
-Important Links
----------------------
-
-Link to Application Repo
----------------------
-https://github.com/CoderCoding00/GOAT-CARs-main
-
 Deployed Webpage
 ---------------------
-<!-- <p>https://goatcars.herokuapp.com/</p> -->
+https://limitless-inlet-80360.herokuapp.com/
 
 
 Installation & Usage
